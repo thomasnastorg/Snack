@@ -48,19 +48,19 @@ int main()
         sf::Vector2f postionFirst= player.getPosition();
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q)){
             player.move(-0.1f,-0.0f);
-            mouveSnack(tableauxX, tableauxY,window,postionFirst,-50,0);
+            //mouveSnack(tableauxX, tableauxY,window,postionFirst,-50,0);
         }
         else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)){
             player.move(0.1f,0.0f);
-            mouveSnack(tableauxX, tableauxY,window,postionFirst,50,0);
+            // mouveSnack(tableauxX, tableauxY,window,postionFirst,50,0);
         }
         else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Z)){
             player.move(0.0f,-0.1f);
-            mouveSnack(tableauxX, tableauxY,window,postionFirst,0,-50);
+            //mouveSnack(tableauxX, tableauxY,window,postionFirst,0,-50);
         }
         else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)){
             player.move(0.0f,0.1f);
-            mouveSnack(tableauxX, tableauxY,window,postionFirst,0,50);
+            //mouveSnack(tableauxX, tableauxY,window,postionFirst,0,50);
         }
         generationPomme(pomme,window, positionX, positionY);
         window.draw(player);
@@ -104,8 +104,8 @@ void mouveSnack(int tableauxX [100],int tableauxY [100],sf::RenderWindow &window
             tableauxY[i] = tpm2;
         */
         }
-        player2.setPosition(tableauxX[0], tableauxX[0]);
-        player3.setPosition(tableauxX[1], tableauxX[1]);
+        //player2.setPosition(tableauxX[0], tableauxX[0]);
+        //player3.setPosition(tableauxX[1], tableauxX[1]);
 
         //window.draw(player2);
         // window.draw(player3);
